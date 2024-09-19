@@ -21,6 +21,7 @@ body {
 
 a {
   text-decoration: none;
+  cursor: pointer;
 }
 .attribution {
   font-size: 11px;
@@ -60,7 +61,196 @@ header {
   background: transparent;
   outline: none;
   border: none;
+  color: #ffffff;
   margin: 0 0.625rem;
   border-radius: 1.25rem;
   cursor: pointer;
+}
+
+.actions_button button.ios {
+  background-color: var(--StrongCyan);
+  box-shadow: 0.125rem 0.125rem 0.5rem var(--StrongCyan),
+    0.125rem 0.125rem 0.125rem var(--StrongCyan);
+}
+
+.actions_button button.mac {
+  background-color: var(--LightBlue);
+  box-shadow: 0.125rem 0.125rem 0.5rem var(--LightBlue),
+    0.125rem 0.125rem 0.125rem var(--LightBlue);
+}
+
+.one {
+  text-align: center;
+  width: 45%;
+  margin: auto;
+}
+
+.one h2 {
+  padding: 0.938rem 0;
+}
+
+.two {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 3.125rem 0;
+}
+
+.two img {
+  height: 100%;
+  width: 80%;
+}
+
+.two .features div {
+  margin-top: 2.5rem;
+  width: 65%;
+}
+
+.three {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.three img {
+  height: 100%;
+  width: 80%;
+  margin: auto;
+}
+
+.three div:first-child {
+  padding: 4.375rem 0;
+  width: 65%;
+  margin: auto;
+}
+
+.four .functions {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 6.25rem 0;
+}
+
+.four .functions div {
+  width: 26%;
+  margin: 0 1.875rem;
+}
+
+.four .functions div img {
+  margin: 0.625rem 0 1.25rem 0;
+}
+
+.four .support_companys {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 6.25rem;
+  margin: 3.125rem 1.875rem;
+}
+
+.five {
+  text-align: center;
+  width: 46%;
+  margin: auto;
+}
+
+footer .foot {
+  display: grid;
+  grid-template-columns: 20% 60% 20%;
+  align-items: center;
+}
+.foot .logo {
+  width: 3.125rem;
+  height: 3.125rem;
+  margin: 0 4.375rem;
+}
+
+.foot ul {
+  list-style: none;
+  max-width: 25rem;
+}
+
+ul li {
+  display: inline-block;
+  margin: 0.313rem 1.25rem;
+}
+
+a {
+  color: var(--StrongCyan);
+}
+
+footer p {
+  text-align: center;
+}
+
+@media screen and (max-width: 47.813rem) {
+  header {
+    background: url("../images/bg-header-mobile.png");
+    background-size: cover;
+    padding: 2.5rem 0.625rem;
+  }
+
+  .intro {
+    width: 100%;
+  }
+
+  .one {
+    width: 80%;
+  }
+
+  .two {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .two .features div {
+    width: 76%;
+    margin: 3.75rem 12% auto;
+    text-align: center;
+  }
+  .three div:first-child {
+    width: 75%;
+  }
+
+  .four .functions {
+    display: grid;
+  }
+
+  .four .functions div {
+    width: 85%;
+  }
+
+  .four .support_companys {
+    display: grid;
+    grid-gap: 4em;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .five {
+    width: 84%;
+  }
+
+  .actions_button button {
+    margin: 0.625rem 0;
+  }
+
+  footer .foot {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 1.25rem 0;
+  }
+
+  ul li {
+    display: grid;
+    margin: 1.25rem 0;
+  }
+
+  .social_links a {
+    margin: 0.625rem;
+  }
 }
