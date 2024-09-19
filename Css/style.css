@@ -4,7 +4,6 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  font-family: "Bai Jamjuree", sans-serif;
 }
 :root {
   /* Primary */
@@ -15,8 +14,13 @@
   --GrayishBlue: hsl(201, 11%, 66%);
 }
 
-body{
-    font-size: 1.125rem;
+body {
+  font-size: 1.125rem;
+  font-family: "Bai Jamjuree", sans-serif;
+}
+
+a {
+  text-decoration: none;
 }
 .attribution {
   font-size: 11px;
@@ -25,4 +29,38 @@ body{
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+header {
+  padding: 1.875rem 4.375rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url("../images/bg-header-desktop.png");
+  background-size: cover;
+}
+
+.intro {
+  text-align: center;
+  padding: 1.125rem 0;
+  width: 50%;
+}
+
+.intro h2 {
+  padding: 0.313rem 0;
+}
+
+.actions_button {
+  padding: 1.25rem 0;
+}
+
+.actions_button button {
+  padding: 0.625rem 1.563rem;
+  background: transparent;
+  outline: none;
+  border: none;
+  margin: 0 0.625rem;
+  border-radius: 1.25rem;
+  cursor: pointer;
 }
